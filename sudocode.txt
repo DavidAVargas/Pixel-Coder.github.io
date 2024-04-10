@@ -1,0 +1,116 @@
+player begins with html css and js 
+button interface
+variable to store coding points / counter
+variable to keep track of users points and also per lauganue points will be 3 variables
+function that is going to determine weather they can conutine in the game
+function adds to users points or detracts based on users answers
+timer that counts down 3min for 3 questions and if its runs out tell user they lost
+flash card data
+complex data structor a array of objects
+6 points minimum to pass total 
+loses getting more 
+function to move the game 
+
+user clicks starts
+little story line how to play have a next button to get to the test 
+sumbit button card flips so the answer is shown and the users answer tell them if its corrects or not
+give the timer per question 1 min per questions once answered timer stops and when user is ready theres next button 
+function runs for that button for the next quwtion 
+fuction to displays the questions 
+
+run out of time or get to many questions wrong 
+the end 
+keep track of their answers and grade it all together 
+
+create a array
+const questions = [
+    {
+        type:'html',
+        question: "html question",
+        answers: ["1","2","3"]
+    },
+    {},
+    {},
+]
+
+
+Some ToDos:
+- Study semantic HTML (done)
+- FIll out your questions objects with some real questions you want to ask in all three categories (done)
+- Write out the narrative for the game that you display at the beginning. ? confused
+- If you want to have some fun with CSS, chose a "color palatte" and "fun font pairs." Google those two and you'll find some cool tools.
+- Research types of question/answer interfaces and see if you want to use multiple choice, radial buttons, or somethign else.
+- Do you want to use sounds? Mayeb research some sounds you want to use and download them as mp3s. ANy other fun assets, when you have time and are too tired to think, you can do these sorts of tasks.
+- Create a start game button that has an event listener attached that fires off a funciton called "game". TO start, the function can just console log "game started." See the rock paper scissors game or the DOM manipulation code we wrote two sessions ago for examples, or look up event handlers and try it out!
+
+
+- Look up how to create a card-flip effect with CSS
+Add to the list of things you want to explore!
+
+
+
+maybe use canvas for the game?
+
+
+questions and answers
+
+HTML Questions:
+
+Easy:
+What does HTML stand for?
+A) Hyper Text Markup Language
+B) High Traffic Management Language
+C) Home Tool Management Language
+Correct Answer: A) Hyper Text Markup Language
+Medium:
+Which HTML element is used to define an unordered list?
+A) <ol>
+B) <list>
+C) <ul>
+Correct Answer: C) <ul>
+Hard:
+What does the target="_blank" attribute do when used in an <a> tag?
+A) Opens the link in a new window or tab
+B) Targets the link to the current window or tab
+C) Specifies the link's position on the page
+Correct Answer: A) Opens the link in a new window or tab
+CSS Questions:
+
+Easy:
+Which CSS property is used to change the text color of an element?
+A) font-color
+B) color
+C) text-color
+Correct Answer: B) color
+Medium:
+Which CSS property is used to set the background color of an element?
+A) background-color
+B) bg-color
+C) background
+Correct Answer: A) background-color
+Hard:
+What does the z-index property in CSS do?
+A) Sets the opacity of an element
+B) Determines the order of overlapping elements along the z-axis
+C) Specifies the alignment of text within an element
+Correct Answer: B) Determines the order of overlapping elements along the z-axis
+JavaScript Questions:
+
+Easy:
+Which keyword is used to declare variables in JavaScript?
+A) let
+B) var
+C) const
+Correct Answer: B) var
+Medium:
+What does the querySelector() method in JavaScript do?
+A) Selects the first element that matches a specified CSS selector
+B) Returns a list of all elements with a specific class name
+C) Finds the last element in the DOM tree
+Correct Answer: A) Selects the first element that matches a specified CSS selector
+Hard:
+What does the addEventListener() method do in JavaScript?
+A) Adds an event listener to an HTML element
+B) Changes the appearance of an element based on user interaction
+C) Executes a function when the page is loaded
+Correct Answer: A) Adds an event listener to an HTML element

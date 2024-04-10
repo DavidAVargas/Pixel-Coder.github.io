@@ -1,0 +1,62 @@
+* {
+    outline: red, dotted;
+    background-color: gray;
+}
+/* nav bar */
+
+
+.navbar { /* center the nav bar */
+    display: flex;
+    justify-content: center;
+}
+
+ul { /* remove the * in the list */
+    list-style-type: none;
+    padding: 0;
+}
+
+li { /* make the nav bar  horizontal */
+    display: inline;
+    margin-right: 20px;
+}
+
+/* game title */
+
+#title {
+    display: flex;
+    justify-content: center;
+
+}
+
+
+/* game container */
+
+.game-container {
+    width: 600px; /* Adjust container width */
+    height: 400px; /* Adjust container height */
+    background-image: url('https://i.pinimg.com/736x/4a/41/19/4a411914d47b84625b896b24b35f7027.jpg');
+    background-size: cover; 
+    background-position: center; 
+    margin: 0 auto; /* Center horizontally */
+    margin-top: 50px;
+    position: relative; /* Set position to relative for absolute positioning of elements */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.play-button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #007bff; /* Change button color */
+    color: #fff; /* Change text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 20px; /* Adjust button position from bottom */
+}
+
+.play-button:hover {
+    background-color: #0056b3; /* Change button color on hover */
+}
