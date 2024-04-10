@@ -1,13 +1,30 @@
-* {
-    outline: red, dotted;
-    background-color: gray;
+body {
+  background-image: linear-gradient(to bottom right, #8e9eab, #eef2f3);
+  margin: 0;
 }
-/* nav bar */
 
+/* font */
+.press-start-2p-regular {
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+/* game title */
+
+#title {
+    display: flex;
+    justify-content: center;
+
+}
+
+/* nav bar */
 
 .navbar { /* center the nav bar */
     display: flex;
     justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
 }
 
 ul { /* remove the * in the list */
@@ -20,32 +37,108 @@ li { /* make the nav bar  horizontal */
     margin-right: 20px;
 }
 
-/* game title */
-
-#title {
-    display: flex;
-    justify-content: center;
-
-}
-
+.navbar ul li a {
+    color: #000000;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar ul li a:hover {
+    color: #59a3f1;
+  }
 
 /* game container */
 
 .game-container {
-    width: 600px; /* Adjust container width */
-    height: 400px; /* Adjust container height */
+    width: 800px; /* Adjust container width */
+    height: 500px; /* Adjust container height */
     background-image: url('https://i.pinimg.com/736x/4a/41/19/4a411914d47b84625b896b24b35f7027.jpg');
-    background-size: cover; 
-    background-position: center; 
-    margin: 0 auto; /* Center horizontally */
-    margin-top: 50px;
+    background-size: cover;
+    background-position: center;
+    margin: 50px auto; /* Center horizontally and add top margin */
     position: relative; /* Set position to relative for absolute positioning of elements */
     display: flex;
     justify-content: center;
     align-items: center;
-}
+    border-radius: 10px; /* Add border radius for a softer look */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Add a subtle box shadow */
+    overflow: hidden; /* Hide any content that exceeds the container's dimensions */
+  }
+  
+  /* .game-container:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Increase the opacity of the overlay 
+    border-radius: 10px;  Match the border radius of the container 
+  }
 
-.play-button {
+  i like this look for the play game start view 
+   */
+  .game-content {
+    position: relative; /* Position the game content on top of the overlay */
+    z-index: 1; /* Ensure the game content is on top of the overlay */
+    text-align: center; /* Center the game content */
+    color: white; /* Set the text color to white */
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add a subtle text shadow */
+    padding: 20px; /* Add some padding to the game content */
+  }
+  
+  #question {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -250px;
+    position: absolute;
+    font-size: 2rem; /* Increase the font size */
+    padding: 1.5rem; /* Adjust the padding */
+    background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent background */
+    border-radius: 10px; /* Match the border radius of the container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
+    color: #333; /* Set the text color to a dark gray */
+  }
+  
+  #options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 180px; /* Adjust the margin as needed */
+    gap: 1rem; /* Add some spacing between the options */
+    flex-wrap: wrap; /* Allow options to wrap to the next line if needed */
+    background: transparent;
+  }
+  
+  #options button {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    color: #333; /* Dark gray text color */
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    padding: 0.8rem 1.5rem; /* Adjust padding */
+    font-size: 1rem; /* Adjust font size */
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Subtle box shadow */
+    transition: background-color 0.3s ease; /* Add a hover transition effect */
+  }
+  
+  #options button:hover {
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly darker background on hover */
+  }
+  
+  #score {
+    position: absolute;
+    top: 20px; /* Adjust the position as needed */
+    right: 20px; /* Adjust the position as needed */
+    background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent background */
+    padding: 0.5rem 1rem; /* Add some padding */
+    border-radius: 5px; /* Add a small border radius */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
+    color: #333; /* Set the text color to a dark gray */
+  }
+  
+  .play-button {
     padding: 10px 20px;
     font-size: 18px;
     background-color: #007bff; /* Change button color */
@@ -55,8 +148,9 @@ li { /* make the nav bar  horizontal */
     cursor: pointer;
     position: absolute;
     bottom: 20px; /* Adjust button position from bottom */
-}
-
-.play-button:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
+  }
+  
+  .play-button:hover {
     background-color: #0056b3; /* Change button color on hover */
-}
+  }

@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Project</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+      </head>
 <body>
         <!-- Header Game Name -->
 <header>
     <div id="title">
-        <h1>FlashCoder</h1>
+        <h1 class="press-start-2p-regular">FlashCoder</h1>
     </div>
 </header>
 
@@ -18,20 +21,21 @@
 <nav>
 <div class="navbar">
     <ul>
-        <li><a href="#">How to Play</a></li>
-        <li><a href="#">Study Guide </a></li>
-        <li><a href="#">Credits</a></li>
+        <li class="press-start-2p-regular"><a href="#">How to Play</a></li>
+        <li class="press-start-2p-regular"><a href="#">Study Guide </a></li>
+        <li class="press-start-2p-regular"><a href="#">Credits</a></li>
     </ul>
 </div>
 </nav>
 
  <!-- Game Container -->
 <main>
-    <div id="question"></div>
-    <div id="options"></div>
-    <div id="score">Coding Points: <span id="score-value">0</span></div>
+   
     <div class="game-container">
         <button id="play-button" class="play-button">Play Game</button>
+        <div id="question"></div>
+        <div id="options"></div>
+        <div id="score">Coding Points: <span id="score-value">0</span></div>
     </div>
 
 </main>
