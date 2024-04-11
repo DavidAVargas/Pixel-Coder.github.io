@@ -1,4 +1,18 @@
 // console.log("JavaScript is connected to HTML!");
+
+// game start screen
+const playButton = document.getElementById('play-button');
+const gameStartScreen = document.querySelector('.game-start-screen');
+const gameContainer = document.querySelector('.game-container');
+
+playButton.addEventListener('click', () => {
+  gameStartScreen.style.display = 'none';
+  gameContainer.style.display = 'flex';
+  displayQuestion();
+});
+
+
+// the game
 const questions = [
     {
         type: 'html',

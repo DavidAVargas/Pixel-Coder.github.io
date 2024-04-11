@@ -1,3 +1,10 @@
+Current Commit:
+
+
+
+Notes:
+
+
 player begins with html css and js 
 button interface
 variable to store coding points / counter
@@ -39,9 +46,9 @@ Some ToDos:
 - FIll out your questions objects with some real questions you want to ask in all three categories (done)
 - Write out the narrative for the game that you display at the beginning. ? confused
 - If you want to have some fun with CSS, chose a "color palatte" and "fun font pairs." Google those two and you'll find some cool tools.
-- Research types of question/answer interfaces and see if you want to use multiple choice, radial buttons, or somethign else.
-- Do you want to use sounds? Mayeb research some sounds you want to use and download them as mp3s. ANy other fun assets, when you have time and are too tired to think, you can do these sorts of tasks.
-- Create a start game button that has an event listener attached that fires off a funciton called "game". TO start, the function can just console log "game started." See the rock paper scissors game or the DOM manipulation code we wrote two sessions ago for examples, or look up event handlers and try it out!
+- Research types of question/answer interfaces and see if you want to use multiple choice, radial buttons, or somethign else.(done)
+- Do you want to use sounds? Mayeb research some sounds you want to use and download them as mp3s. ANy other fun assets, when you have time and are too tired to think, you can do these sorts of tasks.(done)
+- Create a start game button that has an event listener attached that fires off a funciton called "game". TO start, the function can just console log "game started." See the rock paper scissors game or the DOM manipulation code we wrote two sessions ago for examples, or look up event handlers and try it out!(done)
 
 
 - Look up how to create a card-flip effect with CSS
@@ -114,3 +121,20 @@ A) Adds an event listener to an HTML element
 B) Changes the appearance of an element based on user interaction
 C) Executes a function when the page is loaded
 Correct Answer: A) Adds an event listener to an HTML element
+
+mini game bug there a bug ? 
+
+
+how to play pop up for user 
+
+
+
+
+
+
+
+john help idea
+have a a item pop on in the charcater as you win more points 
+image_filenames = ["image1.jpg", "image2.jpg", "image3.jpg", "image4.jpg", "image5.jpg", "image6.jpg"]
+
+document.getElementById('dynamicImage').src = imageFilenames[0];

@@ -47,12 +47,41 @@ li { /* make the nav bar  horizontal */
     color: #59a3f1;
   }
 
+/* Game Start Screen */
+.game-start-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .game-logo {
+ 
+    width: 800px; /* Adjust container width */
+    height: 500px;
+    animation: pulse 2s infinite;
+  }
+
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+
 /* game container */
 
 .game-container {
     width: 800px; /* Adjust container width */
     height: 500px; /* Adjust container height */
-    background-image: url('https://i.pinimg.com/736x/4a/41/19/4a411914d47b84625b896b24b35f7027.jpg');
+    background-image: url('assets/Pixel-Coder-1-img.png');
     background-size: cover;
     background-position: center;
     margin: 50px auto; /* Center horizontally and add top margin */
@@ -65,19 +94,6 @@ li { /* make the nav bar  horizontal */
     overflow: hidden; /* Hide any content that exceeds the container's dimensions */
   }
   
-  /* .game-container:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.4); /* Increase the opacity of the overlay 
-    border-radius: 10px;  Match the border radius of the container 
-  }
-
-  i like this look for the play game start view 
-   */
   .game-content {
     position: relative; /* Position the game content on top of the overlay */
     z-index: 1; /* Ensure the game content is on top of the overlay */
