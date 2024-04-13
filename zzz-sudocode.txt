@@ -145,3 +145,7 @@ need to make ios compatible
 may not be enough space for the character to have standing to add clothes due to the questions ands options in the game container 
 
 also audio not working because needs a play button to control for browser to let it work 
+
+need to change the font in the questions as well
+
+- for the narration i want it as soon and you click play game a narration comes like pokemon explaining the story 

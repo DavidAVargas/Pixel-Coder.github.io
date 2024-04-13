@@ -4,7 +4,7 @@ body {
 }
 
 /* font */
-.press-start-2p-regular {
+* {
     font-family: "Press Start 2P", system-ui;
     font-weight: 400;
     font-style: normal;
@@ -47,6 +47,38 @@ li { /* make the nav bar  horizontal */
     color: #59a3f1;
   }
 
+  .popup {
+    display: none;
+    justify-content: center;
+    position: fixed;
+    padding: 20px;
+    background-color: rgba(47, 44, 44, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    z-index: 999; /* Ensure it appears above other elements */
+    text-align: center; /* Center text */
+    line-height: 2;
+    font-size: 10px;
+    width: 800px;
+    left: 25%;
+    color: white;
+}
+
+.popup.active {
+    display: block;
+    animation: popupFadeIn 0.3s ease; /* Add fade-in animation */
+}
+
+@keyframes popupFadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+  
 /* Game Start Screen */
 .game-start-screen {
     display: flex;
@@ -61,6 +93,8 @@ li { /* make the nav bar  horizontal */
     width: 800px; /* Adjust container width */
     height: 500px;
     animation: pulse 2s infinite;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
   }
 
   @keyframes pulse {
@@ -109,7 +143,7 @@ li { /* make the nav bar  horizontal */
     align-items: center;
     margin-top: -250px;
     position: absolute;
-    font-size: 2rem; /* Increase the font size */
+    font-size: 13px; /* Increase the font size */
     padding: 1.5rem; /* Adjust the padding */
     background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent background */
     border-radius: 10px; /* Match the border radius of the container */
@@ -133,7 +167,7 @@ li { /* make the nav bar  horizontal */
     border: none;
     border-radius: 5px; /* Rounded corners */
     padding: 0.8rem 1.5rem; /* Adjust padding */
-    font-size: 1rem; /* Adjust font size */
+    font-size: 13px; /* Adjust font size */
     cursor: pointer;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Subtle box shadow */
     transition: background-color 0.3s ease; /* Add a hover transition effect */

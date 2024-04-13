@@ -21,12 +21,16 @@
         <nav>
           <div class="navbar">
             <ul>
-              <li class="press-start-2p-regular"><a href="#">How to Play</a></li>
+                <li class="press-start-2p-regular"><a href="#" onclick="showPopup('Welcome to the Pixel Coder! Your future job opportunities depend on your coding skills, so study hard and aim to answer as many questions correctly as possible. Each correct answer earns you coding points, which increase your chances of landing a great job. Here\'s how to play: Read each question carefully and select the correct answer by clicking on it. For every 3 correct answer, a piece of professional clothing will be added to the coder. However, getting a question wrong will result in the removal of a piece of clothing. Your goal is to prepare the coder for a job interview and make him look professional. So, keep answering correctly to dress the coder for success!')">How to Play</a></li>
               <li class="press-start-2p-regular"><a href="#">Study Guide </a></li>
               <li class="press-start-2p-regular"><a href="#">Credits</a></li>
             </ul>
           </div>
         </nav>
+
+        <div id="popup" class="popup">
+            <span id="popupText"></span>
+        </div>
 
         
       <main>
@@ -36,6 +40,9 @@
             <img src="assets/Pixel-Coder-Game-Start.png" alt="Pixel Coder Logo" class="game-logo">
             <button id="play-button" class="play-button">Play Game</button>
           </div>
+
+          <!-- narratrion -->
+          
         
           <!-- Game Container -->
           <div class="game-container" style="display: none;">

@@ -1,5 +1,19 @@
 // console.log("JavaScript is connected to HTML!");
 
+
+// nav bar pop ups
+function showPopup(message) {
+    const popup = document.getElementById('popup');
+    const popupText = document.getElementById('popupText');
+    
+    popupText.textContent = message;
+    popup.classList.add('active');
+
+    setTimeout(() => {
+        popup.classList.remove('active');
+    }, 40000);
+}
+
 // game start screen
 const playButton = document.getElementById('play-button');
 const gameStartScreen = document.querySelector('.game-start-screen');
