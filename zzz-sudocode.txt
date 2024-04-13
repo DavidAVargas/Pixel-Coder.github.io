@@ -8,22 +8,22 @@ Notes:
 player begins with html css and js 
 button interface
 variable to store coding points / counter
-variable to keep track of users points and also per lauganue points will be 3 variables
-function that is going to determine weather they can conutine in the game
+variable to keep track of users points and also per language points will be 3 variables
+function that is going to determine weather they can continue in the game
 function adds to users points or detracts based on users answers
 timer that counts down 3min for 3 questions and if its runs out tell user they lost
 flash card data
-complex data structor a array of objects
+complex data structure a array of objects
 6 points minimum to pass total 
 loses getting more 
 function to move the game 
 
 user clicks starts
 little story line how to play have a next button to get to the test 
-sumbit button card flips so the answer is shown and the users answer tell them if its corrects or not
+submit button card flips so the answer is shown and the users answer tell them if its corrects or not
 give the timer per question 1 min per questions once answered timer stops and when user is ready theres next button 
-function runs for that button for the next quwtion 
-fuction to displays the questions 
+function runs for that button for the next question 
+function to displays the questions 
 
 run out of time or get to many questions wrong 
 the end 
@@ -45,10 +45,10 @@ Some ToDos:
 - Study semantic HTML (done)
 - FIll out your questions objects with some real questions you want to ask in all three categories (done)
 - Write out the narrative for the game that you display at the beginning. ? confused
-- If you want to have some fun with CSS, chose a "color palatte" and "fun font pairs." Google those two and you'll find some cool tools.
-- Research types of question/answer interfaces and see if you want to use multiple choice, radial buttons, or somethign else.(done)
-- Do you want to use sounds? Mayeb research some sounds you want to use and download them as mp3s. ANy other fun assets, when you have time and are too tired to think, you can do these sorts of tasks.(done)
-- Create a start game button that has an event listener attached that fires off a funciton called "game". TO start, the function can just console log "game started." See the rock paper scissors game or the DOM manipulation code we wrote two sessions ago for examples, or look up event handlers and try it out!(done)
+- If you want to have some fun with CSS, chose a "color platte" and "fun font pairs." Google those two and you'll find some cool tools.
+- Research types of question/answer interfaces and see if you want to use multiple choice, radial buttons, or something else.(done)
+- Do you want to use sounds? Maybe research some sounds you want to use and download them as mp3s. ANy other fun assets, when you have time and are too tired to think, you can do these sorts of tasks.(done)
+- Create a start game button that has an event listener attached that fires off a function called "game". TO start, the function can just console log "game started." See the rock paper scissors game or the DOM manipulation code we wrote two sessions ago for examples, or look up event handlers and try it out!(done)
 
 
 - Look up how to create a card-flip effect with CSS
@@ -134,7 +134,14 @@ how to play pop up for user
 
 
 john help idea
-have a a item pop on in the charcater as you win more points 
+have a a item pop on in the character as you win more points 
 image_filenames = ["image1.jpg", "image2.jpg", "image3.jpg", "image4.jpg", "image5.jpg", "image6.jpg"]
 
 document.getElementById('dynamicImage').src = imageFilenames[0];
+
+
+need to make ios compatible 
+
+may not be enough space for the character to have standing to add clothes due to the questions ands options in the game container 
+
+also audio not working because needs a play button to control for browser to let it work 
