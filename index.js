@@ -1,18 +1,42 @@
 // console.log("JavaScript is connected to HTML!");
 
 
-// nav bar pop ups
-function showPopup(message) {
-    const popup = document.getElementById('popup');
-    const popupText = document.getElementById('popupText');
+// // nav bar pop ups
+// function showPopup(message) {
+//     const popup = document.getElementById('popup');
+//     const popupText = document.getElementById('popupText');
     
-    popupText.textContent = message;
-    popup.classList.add('active');
+//     popupText.textContent = message;
+//     popup.classList.add('active');
 
-    setTimeout(() => {
-        popup.classList.remove('active');
-    }, 40000);
+//     setTimeout(() => {
+//         popup.classList.remove('active');
+//     }, 40000);
+// }
+
+
+function showPopup(message) { 
+// hide the game container
+gameStartScreen.style.display = 'none';
+// gameContainer.style.display = 'none';
+const popup = document.getElementById('popup');
+// display message 
+const popupText = document.getElementById('popupText');
+// grab the html to put the message
+// then insert the message
+popupText.textContent = message;
+// bring back the game container 
+popup.classList.add('active');
+setTimeout(() => {
+             popup.classList.remove('active');
+             displayQuestion();
+         }, 4000);
+// gameContainer.style.display = 'flex';
+
+// call the function that shows that first card call out display question function 
+
 }
+
 
 // game start screen
 const playButton = document.getElementById('play-button');
@@ -20,9 +44,9 @@ const gameStartScreen = document.querySelector('.game-start-screen');
 const gameContainer = document.querySelector('.game-container');
 
 playButton.addEventListener('click', () => {
-  gameStartScreen.style.display = 'none';
-  gameContainer.style.display = 'flex';
-  displayQuestion();
+//   gameStartScreen.style.display = 'none';
+//   gameContainer.style.display = 'flex';
+  showPopup('Welcome to the Pixel Coder! Your future job opportunities depend on your coding skills, so study hard and aim to answer as many questions correctly as possible. Each correct answer earns you coding points, which increase your chances of landing a great job. Here\'s how to play: Read each question carefully and select the correct answer by clicking on it. For every 3 correct answer, a piece of professional clothing will be added to the coder. However, getting a question wrong will result in the removal of a piece of clothing. Your goal is to prepare the coder for a job interview and make him look professional. So, keep answering correctly to dress the coder for success!');
 });
 
 
@@ -128,6 +152,7 @@ let currentQuestionIndex = 0;
 let score = 0;
 
 function displayQuestion() {
+    gameContainer.style.display = 'flex';
     const currentQuestion = questions[currentQuestionIndex];
     questionElement.textContent = currentQuestion.question;
 
