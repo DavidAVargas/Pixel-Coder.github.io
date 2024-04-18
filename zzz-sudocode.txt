@@ -149,3 +149,28 @@ also audio not working because needs a play button to control for browser to let
 need to change the font in the questions as well
 
 - for the narration i want it as soon and you click play game a narration comes like pokemon explaining the story 
+
+
+
+john help with narration
+
+<div id="popupText"></div>
+
+let text = "Hello, World!";
+
+    // Get the text container
+    let textContainer = document.getElementById('text-container');
+
+    // Function to display text one character at a time
+    function displayText(text, index) {
+      if (index < text.length) {
+        textContainer.innerHTML += text.charAt(index);
+        index++;
+        setTimeout(function () {
+          displayText(text, index);
+        }, 900); // Adjust the time interval (in milliseconds) between each character
+      }
+    }
+
+    // Call the function to start displaying text
+    displayText(text, 0);
