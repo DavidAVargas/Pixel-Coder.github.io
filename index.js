@@ -1,6 +1,6 @@
 // console.log("JavaScript is connected to HTML!");
 
-// nav bar pop ups
+// nav bar pop ups--------------------------------------------------------
 function showNavPopup(message) {
     const popup = document.getElementById('navpopup');
     const popupText = document.getElementById('navpopupText');
@@ -10,46 +10,55 @@ function showNavPopup(message) {
 
     setTimeout(() => {
         navpopup.classList.remove('active');
-    }, 5000);
+    }, 9000);
 }
 
-// narr container 
+// narration container ------------------------------------------------------
+
+function typeEffect(element, text, speed = 50) {
+  let i = 0;
+  function typing() {
+    if (i < text.length) {
+      element.textContent += text.charAt(i);
+      i++;
+      setTimeout(typing, speed);
+    }
+  }
+  typing();
+}
 
 function showPopup(message) {
   // hide the game container
   gameStartScreen.style.display = "none";
   // gameContainer.style.display = 'none';
   const popup = document.getElementById("popup");
-  // display message
   const popupText = document.getElementById("popupText");
-  // grab the html to put the message
-  // then insert the message
-  popupText.textContent = message;
+
+  // clear previous text and start typing new message
+  popupText.textContent = '';
+  typeEffect(popupText, message, 50); // Adjust speed as needed
+
   // bring back the game container
   popup.classList.add("active");
   setTimeout(() => {
     popup.classList.remove("active");
     displayQuestion();
-  }, 4000);
+  }, 40000); // Adjust time as needed for the length of the message
   // gameContainer.style.display = 'flex';
-
-  // call the function that shows that first card call out display question function
 }
 
-// game start screen
+// screen displays 
 const playButton = document.getElementById("play-button");
 const gameStartScreen = document.querySelector(".game-start-screen");
 const gameContainer = document.querySelector(".game-container");
 
 playButton.addEventListener("click", () => {
-  //   gameStartScreen.style.display = 'none';
-  //   gameContainer.style.display = 'flex';
   showPopup(
-    "Welcome to the Pixel Coder! Your future job opportunities depend on your coding skills, so study hard and aim to answer as many questions correctly as possible. Each correct answer earns you coding points, which increase your chances of landing a great job. Here's how to play: Read each question carefully and select the correct answer by clicking on it. For every 3 correct answer, a piece of professional clothing will be added to the coder. However, getting a question wrong will result in the removal of a piece of clothing. Your goal is to prepare the coder for a job interview and make him look professional. So, keep answering correctly to dress the coder for success!"
+    "Welcome to the Pixel Coder! Your future job opportunities depend on your coding skills, so study hard and aim to answer as many questions correctly as possible. Each correct answer earns you coding points, which increase your chances of landing a great job. Here's how to play: Read each question carefully and select the correct answer by clicking on it. For every 3 correct answers, a piece of professional clothing will be added to the coder. However, getting a question wrong will result in the removal of a piece of clothing. Your goal is to prepare the coder for a job interview and make him look professional. So, keep answering correctly to dress the coder for success!"
   );
 });
 
-// the game
+// the game ------------------------------------------------------
 const questions = [
   {
     type: "html",
