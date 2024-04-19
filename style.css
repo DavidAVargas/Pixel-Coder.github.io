@@ -18,7 +18,7 @@ body {
 
 }
 
-/* nav bar */
+/* nav bar ------------------------------------------------------ */ 
 
 .navbar { /* center the nav bar */
     display: flex;
@@ -77,7 +77,7 @@ li { /* make the nav bar  horizontal */
 }
 
   
-/* Game Start Screen */
+/* Game Start Screen ------------------------------------------------------*/
 .game-start-screen {
     display: flex;
     flex-direction: column;
@@ -108,7 +108,7 @@ li { /* make the nav bar  horizontal */
   }
   
 
-/* narration */
+/* narration ------------------------------------------------------ */
 
 .popup {
   display: none;
@@ -147,12 +147,12 @@ li { /* make the nav bar  horizontal */
   }
 }
 
-/* game container */
+/* game container  ------------------------------------------------------*/
 
 .game-container {
     width: 800px; /* Adjust container width */
     height: 500px; /* Adjust container height */
-    background-image: url('assets/Pixel-Coder-1-img.png');
+    background-image: url('assets/game\ start\ img.png');
     background-size: cover;
     background-position: center;
     margin: 50px auto; /* Center horizontally and add top margin */
