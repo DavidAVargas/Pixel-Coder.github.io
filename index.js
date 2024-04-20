@@ -10,7 +10,7 @@ function showNavPopup(message) {
 
     setTimeout(() => {
         navpopup.classList.remove('active');
-    }, 40000);
+    }, 13000);
 }
 
 // narration container ------------------------------------------------------
@@ -43,7 +43,7 @@ function showPopup(message) {
   setTimeout(() => {
     popup.classList.remove("active");
     displayQuestion();
-  }, 1000); // Adjust time as needed for the length of the message
+  }, 33000); // Adjust time as needed for the length of the message
   // gameContainer.style.display = 'flex';
 }
 
@@ -54,7 +54,7 @@ const gameContainer = document.querySelector(".game-container");
 
 playButton.addEventListener("click", () => {
   showPopup(
-    "Welcome to the Pixel Coder! Your future job opportunities depend on your coding skills, so study hard and aim to answer as many questions correctly as possible. Each correct answer earns you coding points, which increase your chances of landing a great job. Here's how to play: Read each question carefully and select the correct answer by clicking on it. For every 3 correct answers, a piece of professional clothing will be added to the coder. However, getting a question wrong will result in the removal of a piece of clothing. Your goal is to prepare the coder for a job interview and make him look professional. So, keep answering correctly to dress the coder for success!"
+    "Welcome to Pixel Coder! Join David's journey to secure a coding job by studying hard. Every 3 correct answers bring him closer to being fully prepared for his full stack development interview. With more correct answers, his chance of landing a better job increases, as there are different job tiers. Read each question carefully, select the right answer, and watch as David's professional attire grows with each correct response. But remember, a wrong answer means staying at that level. Your goal? Dress David for success and ace that interview!"
   );
 });
 

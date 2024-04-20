@@ -134,7 +134,7 @@ how to play pop up for user
 
 
 john help idea
-have a a item pop on in the character as you win more points 
+have a a item pop on in the character as you win more points done 
 image_filenames = ["image1.jpg", "image2.jpg", "image3.jpg", "image4.jpg", "image5.jpg", "image6.jpg"]
 
 document.getElementById('dynamicImage').src = imageFilenames[0];
@@ -152,7 +152,7 @@ need to change the font in the questions as well
 
 
 
-john help with narration
+john help with narration done
 
 <div id="popupText"></div>
 
@@ -174,3 +174,11 @@ let text = "Hello, World!";
 
     // Call the function to start displaying text
     displayText(text, 0);
+
+
+
+
+    need to add wrong questions point tracker 
+    game end screen containersm that match up how points for the job tiers 
+    fix msuic on chrome "working on Safari"
+    nav bar links 
