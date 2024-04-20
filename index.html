@@ -55,10 +55,20 @@
           </div>
       </main>
 
+      
+      <!-- Game Over -->
+
+      <footer>
+        <div id="game-over-screen" class="game-over-screen" style="display: none;">
+        <h2>Game Over!</h2>
+        <p>Your final coding skill is: <span id="final-score"></span></p>
+        </div>
+      </footer>
+
       <!-- Music -->
       <audio id="game-music" autoplay loop>
         <source src="assets/funk-in-kingdom-200507.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
+        <!-- chrome browser does not support the audio element, need audio controls-->
       </audio>
     
       <!-- Js -->

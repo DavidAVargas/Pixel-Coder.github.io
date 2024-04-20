@@ -404,7 +404,7 @@ const questions = [
 const gameImages = [
   'assets/game_start_img.png', // Initial image
   'assets/html-1.png',   // Image after 3 correct answers
-  'assets/html-2.png',    // Image after 6 correct answers
+  'assets/html-2.png',    // Image after 6 correct answers etc
   'assets/html-3.png',
   'assets/html-4.png',
   'assets/css-1.png',
@@ -431,6 +431,7 @@ function checkAnswer(selectedOption) {
   goToNextQuestion();
 }
 
+
 // --------------------------
 const questionElement = document.getElementById("question");
 const optionsElement = document.getElementById("options");
@@ -452,13 +453,16 @@ function displayQuestion() {
     optionsElement.appendChild(button);
   });
 }
-
+// End of game 
 function goToNextQuestion() {
   currentQuestionIndex++;
   if (currentQuestionIndex < questions.length) {
     displayQuestion();
   } else {
-    // End of game
-    alert("Game Over! Your final score is " + score);
+    // Show Game Over screen
+    gameContainer.style.display = 'none'; // Hide game container
+    const gameOverScreen = document.getElementById('game-over-screen');
+    gameOverScreen.style.display = 'flex'; // Show game over screen
+    document.getElementById('final-score').textContent = score; // Display final score
   }
 }

@@ -20,19 +20,19 @@ body {
 
 /* nav bar ------------------------------------------------------ */ 
 
-.navbar { /* center the nav bar */
+.navbar {
     display: flex;
     justify-content: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 10px 0;
 }
 
-ul { /* remove the * in the list */
+ul { 
     list-style-type: none;
     padding: 0;
 }
 
-li { /* make the nav bar  horizontal */
+li { 
     display: inline;
     margin-right: 20px;
 }
@@ -54,8 +54,8 @@ li { /* make the nav bar  horizontal */
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-    z-index: 999; /* Ensure it appears above other elements */
-    text-align: center; /* Center text */
+    z-index: 999; 
+    text-align: center; 
     line-height: 2;
     font-size: 8px;
     color: rgb(0, 0, 0);
@@ -88,7 +88,7 @@ li { /* make the nav bar  horizontal */
   
   .game-logo {
  
-    width: 800px; /* Adjust container width */
+    width: 800px; 
     height: 500px;
     animation: pulse 2s infinite;
     border-radius: 10px;
@@ -118,8 +118,8 @@ li { /* make the nav bar  horizontal */
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-  z-index: 999; /* Ensure it appears above other elements */
-  text-align: center; /* Center text */
+  z-index: 999; 
+  text-align: center; 
   line-height: 2;
   font-size: 15px;
   left: 24%;
@@ -128,7 +128,7 @@ li { /* make the nav bar  horizontal */
 
 .popup.active {
   display: block;
-  animation: popupFadeIn 0.3s ease; /* Add fade-in animation */
+  animation: popupFadeIn 0.3s ease;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -150,28 +150,28 @@ li { /* make the nav bar  horizontal */
 /* game container  ------------------------------------------------------*/
 
 .game-container {
-    width: 800px; /* Adjust container width */
-    height: 500px; /* Adjust container height */
+    width: 800px; 
+    height: 500px; 
     background-image: url('assets/game\ start\ img.png');
     background-size: cover;
     background-position: center;
-    margin: 50px auto; /* Center horizontally and add top margin */
-    position: relative; /* Set position to relative for absolute positioning of elements */
+    margin: 50px auto; 
+    position: relative;
     display: none;
     justify-content: center;
     align-items: center;
-    border-radius: 10px; /* Add border radius for a softer look */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Add a subtle box shadow */
-    overflow: hidden; /* Hide any content that exceeds the container's dimensions */
+    border-radius: 10px; 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
   }
   
   .game-content {
-    position: relative; /* Position the game content on top of the overlay */
-    z-index: 1; /* Ensure the game content is on top of the overlay */
-    text-align: center; /* Center the game content */
-    color: white; /* Set the text color to white */
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add a subtle text shadow */
-    padding: 20px; /* Add some padding to the game content */
+    position: relative; 
+    z-index: 1; 
+    text-align: center; 
+    color: white; 
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+    padding: 20px; 
   }
   
   #question {
@@ -180,64 +180,85 @@ li { /* make the nav bar  horizontal */
     align-items: center;
     margin-top: -250px;
     position: absolute;
-    font-size: 13px; /* Increase the font size */
-    padding: 1.5rem; /* Adjust the padding */
-    background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent background */
-    border-radius: 10px; /* Match the border radius of the container */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
-    color: #333; /* Set the text color to a dark gray */
+    font-size: 13px; 
+    padding: 1.5rem; 
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+    color: #333; 
   }
   
   #options {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 180px; /* Adjust the margin as needed */
-    gap: 1rem; /* Add some spacing between the options */
-    flex-wrap: wrap; /* Allow options to wrap to the next line if needed */
+    margin-top: 180px; 
+    gap: 1rem; 
+    flex-wrap: wrap; 
     background: transparent;
   }
   
   #options button {
-    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
-    color: #333; /* Dark gray text color */
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333; 
     border: none;
-    border-radius: 5px; /* Rounded corners */
-    padding: 0.8rem 1.5rem; /* Adjust padding */
-    font-size: 13px; /* Adjust font size */
+    border-radius: 5px; 
+    padding: 0.8rem 1.5rem; 
+    font-size: 13px; 
     cursor: pointer;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Subtle box shadow */
-    transition: background-color 0.3s ease; /* Add a hover transition effect */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+    transition: background-color 0.3s ease; 
   }
   
   #options button:hover {
-    background-color: rgba(255, 255, 255, 0.9); /* Slightly darker background on hover */
+    background-color: rgba(255, 255, 255, 0.9);
   }
   
   #score {
     position: absolute;
-    top: 20px; /* Adjust the position as needed */
-    right: 20px; /* Adjust the position as needed */
-    background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent background */
-    padding: 0.5rem 1rem; /* Add some padding */
-    border-radius: 5px; /* Add a small border radius */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
-    color: #333; /* Set the text color to a dark gray */
+    top: 20px; 
+    right: 20px; 
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 0.5rem 1rem;
+    border-radius: 5px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+    color: #333; 
   }
   
   .play-button {
     padding: 10px 20px;
     font-size: 18px;
-    background-color: #007bff; /* Change button color */
-    color: #fff; /* Change text color */
+    background-color: #007bff; 
+    color: #fff; 
     border: none;
     border-radius: 5px;
     cursor: pointer;
     position: absolute;
-    bottom: 20px; /* Adjust button position from bottom */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
+    bottom: 20px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
   }
   
   .play-button:hover {
-    background-color: #0056b3; /* Change button color on hover */
+    background-color: #0056b3; 
   }
+
+  /* game over  ------------------------------------------------------*/
+ .game-over-screen {
+    width: 800px; 
+    height: 500px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: fixed;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    z-index: 999; 
+    line-height: 2;
+    font-size: 15px;
+    left: 24%;
+    color: rgb(0, 0, 0);
+}

@@ -181,4 +181,6 @@ let text = "Hello, World!";
     need to add wrong questions point tracker 
     game end screen containersm that match up how points for the job tiers 
     fix msuic on chrome "working on Safari"
-    nav bar links 
+    nav bar links done 
+    restart button to restart without the narration
+    
