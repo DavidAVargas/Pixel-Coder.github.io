@@ -43,7 +43,7 @@ function showPopup(message) {
   setTimeout(() => {
     popup.classList.remove("active");
     displayQuestion();
-  }, 33000); // Adjust time as needed for the length of the message
+  }, 38000); // Adjust time as needed for the length of the message
   // gameContainer.style.display = 'flex';
 }
 
@@ -54,7 +54,7 @@ const gameContainer = document.querySelector(".game-container");
 
 playButton.addEventListener("click", () => {
   showPopup(
-    "Welcome to Pixel Coder! Join David's journey to secure a coding job by studying hard. Every 3 correct answers bring him closer to being fully prepared for his full stack development interview. With more correct answers, his chance of landing a better job increases, as there are different job tiers. Read each question carefully, select the right answer, and watch as David's professional attire grows with each correct response. But remember, a wrong answer means staying at that level. Your goal? Dress David for success and ace that interview!"
+    "Welcome to Pixel Coder! Join David's journey to secure a coding job by studying hard. Every 3 correct answers bring him closer to being fully prepared for his full stack development interview. With more correct answers, his chance of landing a better job increases, as there are different job tiers. Read each question carefully, select the right answer, and watch as David's professional attire grows with each correct response. But remember, a wrong answer means staying at that level. There's a total of 30 questions; you won't be able to see the wrong answer; you will know if you got the question right if you get a coding point. Your goal? Dress David for success and ace that interview!"
   );
 });
 
