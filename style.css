@@ -262,3 +262,143 @@ li {
     left: 24%;
     color: rgb(0, 0, 0);
 }
+/* Mobile View */
+/* Media Queries for Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  #title h1 {
+    font-size: 24px;
+  }
+
+  .navbar ul li {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .game-start-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .game-logo {
+    width: 100%;
+    height: auto;
+    max-width: 350px; /* Increased from 300px */
+    margin-bottom: 20px;
+  }
+
+  .game-container {
+    width: 90%;
+    height: auto;
+    margin: 20px auto;
+    display: none; /* Hide by default */
+    flex-direction: column;
+    min-height: 500px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top center;
+    padding-top: 60%;
+  }
+
+  .game-container.active {
+    display: flex; /* Show when active class is added */
+  }
+
+  #question {
+    position: static;
+    margin-top: 20px;
+    width: 90%;
+    font-size: 14px;
+    padding: 1rem;
+  }
+
+  #options {
+    position: static;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 90%;
+  }
+
+  #options button {
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 11px;
+    padding: 0.6rem 1rem;
+  }
+
+  #score {
+    font-size: 12px;
+    top: 10px;
+    right: 10px;
+  }
+
+  .play-button {
+    font-size: 16px;
+    padding: 8px 16px;
+    margin-bottom: 200px;
+  }
+
+  .popup, .navpopup, .game-over-screen {
+    width: 90%;
+    height: auto;
+    left: 5%;
+    right: 5%;
+    font-size: 14px;
+    padding: 15px;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    max-height: 80vh;
+    overflow-y: auto;
+  }
+
+  .popup.active p {
+    margin-bottom: 15px;
+  }
+
+  .skip-button {
+    display: block;
+    margin-top: 15px;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .skip-button:hover {
+    background-color: #0056b3;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 12px;
+  }
+
+  #title h1 {
+    font-size: 20px;
+  }
+
+  .game-logo {
+    max-width: 380px; /* Adjusted for smaller screens */
+  }
+
+  #question {
+    font-size: 10px;
+  }
+
+  #options button {
+    font-size: 10px;
+    padding: 0.5rem 0.8rem;
+  }
+}

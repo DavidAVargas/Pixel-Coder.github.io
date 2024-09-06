@@ -28,23 +28,43 @@ function typeEffect(element, text, speed = 50) {
 }
 
 function showPopup(message) {
-  // hide the game container
   gameStartScreen.style.display = "none";
-  // gameContainer.style.display = 'none';
   const popup = document.getElementById("popup");
   const popupText = document.getElementById("popupText");
 
-  // clear previous text and start typing new message
   popupText.textContent = '';
-  typeEffect(popupText, message, 50); // Adjust speed as needed
+  typeEffect(popupText, message, 50);
 
-  // bring back the game container
   popup.classList.add("active");
-  setTimeout(() => {
+
+  // Create and append skip button
+  const skipButton = document.createElement('button');
+  skipButton.textContent = 'Skip';
+  skipButton.className = 'skip-button';
+  skipButton.onclick = () => {
     popup.classList.remove("active");
     displayQuestion();
-  }, 38000); // Adjust time as needed for the length of the message
-  // gameContainer.style.display = 'flex';
+  };
+  popup.appendChild(skipButton);
+
+  // Remove the setTimeout and let the skip button handle closing
+}
+
+function showNavPopup(message) {
+  const popup = document.getElementById('navpopup');
+  const popupText = document.getElementById('navpopupText');
+  navpopupText.textContent = message;
+  
+  // Create and append skip button
+  const skipButton = document.createElement('button');
+  skipButton.textContent = 'Skip';
+  skipButton.className = 'skip-button';
+  skipButton.onclick = () => {
+    popup.classList.remove('active');
+  };
+  popup.appendChild(skipButton);
+  
+  popup.classList.add('active');
 }
 
 // screen displays 
