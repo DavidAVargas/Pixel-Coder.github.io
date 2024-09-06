@@ -46,15 +46,14 @@ function showPopup(message) {
     displayQuestion();
   };
   popup.appendChild(skipButton);
-
-  // Remove the setTimeout and let the skip button handle closing
 }
 
 function showNavPopup(message) {
   const popup = document.getElementById('navpopup');
   const popupText = document.getElementById('navpopupText');
-  navpopupText.textContent = message;
-  
+  popupText.textContent = message; // Fixed variable name
+  popup.classList.add('active');
+
   // Create and append skip button
   const skipButton = document.createElement('button');
   skipButton.textContent = 'Skip';
@@ -63,11 +62,13 @@ function showNavPopup(message) {
     popup.classList.remove('active');
   };
   popup.appendChild(skipButton);
-  
-  popup.classList.add('active');
+
+  setTimeout(() => {
+    popup.classList.remove('active');
+  }, 13000);
 }
 
-// screen displays 
+// Screen displays
 const playButton = document.getElementById("play-button");
 const gameStartScreen = document.querySelector(".game-start-screen");
 const gameContainer = document.querySelector(".game-container");
