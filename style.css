@@ -360,6 +360,28 @@ li {
     overflow-y: auto;
   }
 
+  .popup.active {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: auto;
+    max-height: 60vh;
+    left: 5%;
+    right: 5%;
+    font-size: 14px;
+    padding: 15px;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    overflow-y: auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+  }
+
   .popup.active p {
     margin-bottom: 15px;
   }
