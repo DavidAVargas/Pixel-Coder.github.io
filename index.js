@@ -487,3 +487,19 @@ function goToNextQuestion() {
     document.getElementById('final-score').textContent = score; // Display final score
   }
 }
+
+//  Play again button
+const playAgainButton = document.getElementById("play-again-button");
+
+playAgainButton.addEventListener("click", () => {
+  document.getElementById("game-over-screen").style.display = "none";
+  gameContainer.style.display = "flex";
+  resetGame();
+  displayQuestion();
+});
+
+function resetGame() {
+  currentQuestionIndex = 0;
+  score = 0;
+  document.getElementById("score-value").textContent = score;
+}
